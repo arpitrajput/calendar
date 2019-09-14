@@ -1,0 +1,141 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to right, #25bfbf 0%, #6edcaa 100%);
+}
+
+.Calendar {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  min-height: 400px;
+  margin-top: 100px;
+  padding: 50px;
+  flex: 5;
+}
+
+.rightColumn {
+  flex: 3;
+  padding: 4rem 1rem;
+  background: #f3f8f8 !important;
+  text-align: center;
+}
+
+.leftColumn {
+  flex: 2;
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, #9335ff 0%, #5c71ff 100%);
+}
+
+#tableBody .col:hover {
+  cursor: pointer;
+  background-color: #5c72ffe7;
+  color: white;
+}
+
+.empty-day:hover {
+  cursor: default !important;
+  background: #f3f8f8 !important;
+}
+
+#tableBody .row .col {
+  padding: .75rem;
+  margin: 3px;
+  border-radius: 2px;
+}
+
+#tableBody .col {
+  border: 1px solid transparent;
+}
+
+
+#tableBody .row {
+  margin-bottom: 0;
+}
+
+#tableBody .col {
+  padding-top: 1.3rem !important;
+  padding-bottom: 1.3rem !important;
+}
+
+.activeDay {
+  background: #5c72ffe7;
+  color: white;
+  padding: 0;
+}
+
+#selectedDay {
+  padding-bottom: 1rem;
+  padding-top: 6rem;
+  font-size: 2.4em ;
+  font-weight: 400 ;
+}
+
+.dayHover {
+  background: #435bfae7;
+}
+
+#todayDayName {
+  font-size: 1.8em;
+  color: rgb(238, 231, 245);
+  font-weight: 400;
+  padding: 0;margin: 0;
+  padding-bottom: 40px;
+}
+
+.arrowContainer {
+  display: inline-flex;
+  width: 158px;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.arrowContainer a {
+  display: inline-flex;
+  font-size: 0.2px;
+  margin: 5px 0;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.arrowContainer a:hover i{
+  box-shadow: 0 0 11px rgba(33,33,33,.3); 
+}
+.arrowContainer i {
+  margin-top: 5px;
+  border-radius: 100%;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  border: .61px solid rgba(212, 168, 247, 0.753);
+}
+
+
+@media(max-width:1000px) {
+  .Calendar {
+    flex: 1;
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 0.5rem 1rem;
+  }
+
+  .rightColumn {
+    width: 100%
+  }
+  #tableBody .row .col {
+    padding: 5px 0 !important;
+    border-radius: 2px;
+  }
+ .row .col {
+    padding: 5px 0 !important;
+    border-radius: 2px;
+  }
+  .leftColumn {
+    width: 100%
+  }
+  #selectedDay {
+    padding-top: 1rem;
+  }
+}

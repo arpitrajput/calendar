@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive calendar</title>
+  <link rel="shortcut icon" type="image/x-icon" href="icons/outline_home_white_18dp.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="Calendar">
+    <div class="leftColumn">
+      <h4 id="todayDayName"></h4>
+      <h3 id="selectedDay">Date</h3>
+      <div class="arrowContainer">
+        <a id="prevMonth">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+        <p id="month-name"> </p>
+        <a id="nextMonth">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </a>
+      </div>
+      <br>
+      <div class="arrowContainer">
+        <a id="prevYear">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+        <p id="year-name"></p>
+        <a id="nextYear">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </a>
+      </div>
+    </div>
+    <div class="rightColumn">
+      <div id="tableContainer">
+        <div class="row">
+          <div class="col">Mon</div>
+          <div class="col">Tue</div>
+          <div class="col">Wed</div>
+          <div class="col">Thu</div>
+          <div class="col">Fri</div>
+          <div class="col">Sat</div>
+          <div class="col">Sun</div>
+        </div>
+        <div id="tableBody">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
